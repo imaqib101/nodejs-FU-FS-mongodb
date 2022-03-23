@@ -11,8 +11,6 @@ let app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.resolve(__dirname, "public")));
-
-app.use();
 app.post("/post-data", function (req, res) {
   dbConn.then(function (db) {
     delete req.body._id;
@@ -32,4 +30,4 @@ app.get("/view-data", function (req, res) {
   });
 });
 
-app.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0");
+app.listen(process.env.PORT || 3000);

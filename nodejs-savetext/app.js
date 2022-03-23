@@ -4,7 +4,7 @@ let bodyParser = require("body-parser");
 let mongodb = require("mongodb");
 
 let dbConn = mongodb.MongoClient.connect(
-  "mongodb://localhost:27017/saved_DATA"
+  "mongodb://localhost:27017/saved_data"
 );
 
 let app = express();
@@ -12,6 +12,7 @@ let app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.resolve(__dirname, "public")));
 
+app.use();
 app.post("/post-data", function (req, res) {
   dbConn.then(function (db) {
     delete req.body._id;

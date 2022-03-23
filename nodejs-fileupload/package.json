@@ -1,7 +1,7 @@
 {
-  "name": "upload-multiple-files-mongodb",
+  "name": "upload-files-mongodb",
   "version": "1.0.0",
-  "description": "Node.js upload multiple files/images to MongoDB Demo",
+  "description": "Node.js upload multiple files/images to MongoDB",
   "main": "src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,6 @@
     "upload",
     "multiple",
     "files",
-    "images",
     "mongodb"
   ],
   "author": "",

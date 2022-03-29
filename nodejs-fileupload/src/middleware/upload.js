@@ -1,8 +1,10 @@
 const util = require("util");
 const multer = require("multer");
-const { GridFsStorage } = require("multer-gridfs-storage");
-const dbConfig = require("../config/db");
 const { v4: uuidv4 } = require("uuid");
+
+const { GridFsStorage } = require("multer-gridfs-storage");
+
+const dbConfig = require("../config/db");
 const fs = require("fs");
 
 let storage = new GridFsStorage({
